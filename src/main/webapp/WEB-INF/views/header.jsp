@@ -23,12 +23,14 @@ padding: 10px
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Todo Management System</title>
 </head>
+
+
 <body>
 
 	<div align="left"; style="width: 100%; background-color: #231f20">
 		<span style="margin: 70px; line-height: 68px; font-size: 14px"
 			align="left">
-			<td> <img src="images/logo.png" height = 32px width = 80px/></td>
+			<td> <img src="../../WebContent/images/logo.png" height = 32px width = 80px></td>
 				<a href="/" style="margin: 30px; color: aliceblue; font-weight:bold">  ЗАДАЧИ</a>
 				<a style="margin: 10px; color: aliceblue;"> | </a>
 		</a> <a href="allstaff" style="margin: 10px; color: aliceblue; font-weight:bold"> <span style="padding: 1px"> СОТРУДНИКИ</span>

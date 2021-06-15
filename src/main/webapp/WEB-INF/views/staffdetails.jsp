@@ -13,10 +13,8 @@
 
 <table>
 
-<tr>
-<td> <img src = "images/${staff.getPicture()}" height = 100px width = 100px></td>
+<td> <img src = "../../WebContent/images/${staff.getPicture()}" height = 200px width = 200px></td>
 </tr>
-
 
     <tr>
         <td>ФИО:</td>
