@@ -37,8 +37,8 @@ public void addResourceHandlers(ResourceHandlerRegistry registry) {
         mailSender.setHost("smtp.gmail.com");
         mailSender.setPort(587);
 
-        mailSender.setUsername("ggalkin@gmail.com");
-        mailSender.setPassword("ggalkinPass");
+        mailSender.setUsername("gmgalkin@gmail.com");
+        mailSender.setPassword("quuxlexmxlsdxqze");
 
         Properties props = mailSender.getJavaMailProperties();
         props.put("mail.transport.protocol", "smtp");

@@ -13,7 +13,7 @@
 
 <table>
 
-<td> <img src = "../../WebContent/images/${staff.getPicture()}" height = 200px width = 200px></td>
+<td> <img src = "../../WebContent/images/${staff.getPicture()}" height = 200px width = 200px style="box-shadow: #231f20 7px 7px 5px"></td>
 </tr>
 
     <tr>

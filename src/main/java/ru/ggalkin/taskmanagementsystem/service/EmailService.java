@@ -16,6 +16,7 @@ public class EmailService  {
             String to, String subject, String text) {
 
         SimpleMailMessage message = new SimpleMailMessage();
+        message.setFrom("noreply@baeldung.com");
         message.setTo(to);
         message.setSubject(subject);
         message.setText(text);

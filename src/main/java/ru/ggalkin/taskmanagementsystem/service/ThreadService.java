@@ -18,8 +18,6 @@ public class ThreadService implements Runnable {
 
             }catch(Exception e) {}
 
-
-
         }
 
     }
