@@ -24,7 +24,7 @@ public class StaffController {
 
     private static String UPLOADED_FOLDER =
 
-            "/Users/gavriilgalkin/Downloads/TaskManagementSystem/src/main/webapp/WebContent/images/";
+            "/Users/gavriilgalkin/IdeaProjects/Projects/TaskManagementSystem/src/main/webapp/WebContent/images/";
 
 
     @Autowired

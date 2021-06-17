@@ -3,6 +3,9 @@ package ru.ggalkin.taskmanagementsystem.model;
 
 
 
+import lombok.Getter; // Автогенерация геттеров
+import lombok.Setter; // Автогенерация сеттеров
+
 import javax.persistence.Column; //используется для указания сведений о столбце, с которым связано поле или свойство.
 import javax.persistence.Entity; //говорит Hibernate о том, что этот класс является сущностью
 import javax.persistence.GeneratedValue; //позволяет задать несколько различных способов генерации этого идентификатора
@@ -11,6 +14,8 @@ import javax.persistence.Table; //позволяет указать назван
 
 @Entity
 @Table(name = "Staff")
+@Getter
+@Setter
 public class Staff {
 
     @Id
@@ -78,69 +83,69 @@ public class Staff {
 
 
 
-    public String getStaff_name() {
-        return staff_name;
-    }
-
-    public void setStaff_name(String staff_name) {
-        this.staff_name = staff_name;
-    }
-
-    public String getStaff_surname() {
-        return staff_surname;
-    }
-
-    public void setStaff_surname(String staff_surname) {
-        this.staff_surname = staff_surname;
-    }
-
-    public String getStaff_secondName() {
-        return staff_secondName;
-    }
-
-    public void setStaff_secondName(String staff_secondName) {
-        this.staff_secondName = staff_secondName;
-    }
-
-    public String getStaff_fio() {
-        return staff_fio;
-    }
-
-    public void setStaff_fio(String staff_fio) {
-        this.staff_fio = staff_fio;
-    }
-
-    public String getDob() {
-        return dob;
-    }
-
-    public void setDob(String dob) {
-        this.dob = dob;
-    }
-
-    public String getHiredDate() {
-        return hiredDate;
-    }
-
-    public void setHiredDate(String hiredDate) {
-        this.hiredDate = hiredDate;
-    }
-
-    public String getDepartment() {
-        return department;
-    }
-
-    public void setDepartment(String department) {
-        this.department = department;
-    }
-
-	public String getPicture() {
-		return picture;
-	}
-
-	public void setPicture(String picture) {
-		this.picture = picture;
-	}
+//    public String getStaff_name() {
+//        return staff_name;
+//    }
+//
+//    public void setStaff_name(String staff_name) {
+//        this.staff_name = staff_name;
+//    }
+//
+//    public String getStaff_surname() {
+//        return staff_surname;
+//    }
+//
+//    public void setStaff_surname(String staff_surname) {
+//        this.staff_surname = staff_surname;
+//    }
+//
+//    public String getStaff_secondName() {
+//        return staff_secondName;
+//    }
+//
+//    public void setStaff_secondName(String staff_secondName) {
+//        this.staff_secondName = staff_secondName;
+//    }
+//
+//    public String getStaff_fio() {
+//        return staff_fio;
+//    }
+//
+//    public void setStaff_fio(String staff_fio) {
+//        this.staff_fio = staff_fio;
+//    }
+//
+//    public String getDob() {
+//        return dob;
+//    }
+//
+//    public void setDob(String dob) {
+//        this.dob = dob;
+//    }
+//
+//    public String getHiredDate() {
+//        return hiredDate;
+//    }
+//
+//    public void setHiredDate(String hiredDate) {
+//        this.hiredDate = hiredDate;
+//    }
+//
+//    public String getDepartment() {
+//        return department;
+//    }
+//
+//    public void setDepartment(String department) {
+//        this.department = department;
+//    }
+//
+//	public String getPicture() {
+//		return picture;
+//	}
+//
+//	public void setPicture(String picture) {
+//		this.picture = picture;
+//	}
 
     public int getId() {
         return id;
