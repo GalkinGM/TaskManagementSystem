@@ -12,6 +12,7 @@
 	<br>
 	<br>
 	<div style="margin-left: 60px">
+
 		<form action="/updateToDo/${todo.getId() }" method="post">
 					
 			<table cellpadding=10px>

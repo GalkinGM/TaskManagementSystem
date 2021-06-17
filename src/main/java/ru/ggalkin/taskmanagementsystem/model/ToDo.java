@@ -50,8 +50,6 @@ public class ToDo {
         this.id = id;
     }
 
-
-
     public String getTodo() {
         return todo;
     }

@@ -2,6 +2,13 @@ package ru.ggalkin.taskmanagementsystem.model;
 
 
 import java.time.LocalDate;
+
+import lombok.Getter; // Автогенерация Getter (можно устанавливать как над классом, так и над полями)
+import lombok.Setter; // Автогенерация Setter (можно устанавливать как над классом, так и над полями)
+import lombok.ToString;// Автогенерация ToString (если мы хотим сгенерировать строку по нескольким полям
+                        // то пишем of ={перечисляем нужные поля},
+                        // если хотим сгенерировать по всем полям кроме некоторых пишем exclude = {перечисляем ненужные поля} )
+
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.Table; //позволяет указать название таблицы в БД, которая связана с этой сущностью
@@ -17,6 +24,11 @@ import javax.persistence.ManyToOne; // @OneToMany задаёт отношени�
 
 @Entity
 @Table(name = "Task")
+
+// lombok
+@Getter
+@Setter
+@ToString (of = {"id", "task_descrption", "task_project", "task_task", "due_date", "created_date"})
 public class Task {
 
     @Id
@@ -52,88 +64,88 @@ public class Task {
     @JoinColumn(name = "userefio", nullable = false)
     private String staffFio;
 
-    public String getStaffFio() {
-        return staffFio;
-    }
+//    public String getStaffFio() {
+//        return staffFio;
+//    }
+//
+//    public void setStaffFio(String staffFio) {
+//        this.staffFio = staffFio;
+//    }
+//
+//    public Staff getStaff() {
+//        return staff;
+//    }
+//
+//    public void setStaff(Staff staff) {
+//
+//        this.staff = staff;
+//    }
+//
+//    public String getEmail() {
+//        return email;
+//    }
+//
+//    public void setEmail(String email) {
+//        this.email = email;
+//    }
+//
+//    public Task() {
+//        super();
+//    }
+//
+//    public int getId() {
+//        return id;
+//    }
+//
+//    public void setId(int id) {
+//        this.id = id;
+//    }
+//
+//    public String getTask_descrption() {
+//        return task_descrption;
+//    }
+//
+//    public void setTask_descrption(String task_descrption) {
+//        this.task_descrption = task_descrption;
+//    }
+//
+//    public String getTask_project() {
+//        return task_project;
+//    }
+//
+//    public void setTask_project(String task_project) {
+//        this.task_project = task_project;
+//    }
+//
+//    public String getTask_task() {
+//        return task_task;
+//    }
+//
+//    public void setTask_task(String task_task) {
+//        this.task_task = task_task;
+//    }
+//
+//    public LocalDate getDue_date() {
+//        return due_date;
+//    }
+//
+//    public void setDue_date(LocalDate due_date) {
+//        this.due_date = due_date;
+//    }
+//
+//    public LocalDate getCreated_date() {
+//        return created_date;
+//    }
+//
+//    public void setCreated_date(LocalDate created_date) {
+//        this.created_date = created_date;
+//    }
 
-    public void setStaffFio(String staffFio) {
-        this.staffFio = staffFio;
-    }
-
-    public Staff getStaff() {
-        return staff;
-    }
-
-    public void setStaff(Staff staff) {
-
-        this.staff = staff;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public Task() {
-        super();
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getTask_descrption() {
-        return task_descrption;
-    }
-
-    public void setTask_descrption(String task_descrption) {
-        this.task_descrption = task_descrption;
-    }
-
-    public String getTask_project() {
-        return task_project;
-    }
-
-    public void setTask_project(String task_project) {
-        this.task_project = task_project;
-    }
-
-    public String getTask_task() {
-        return task_task;
-    }
-
-    public void setTask_task(String task_task) {
-        this.task_task = task_task;
-    }
-
-    public LocalDate getDue_date() {
-        return due_date;
-    }
-
-    public void setDue_date(LocalDate due_date) {
-        this.due_date = due_date;
-    }
-
-    public LocalDate getCreated_date() {
-        return created_date;
-    }
-
-    public void setCreated_date(LocalDate created_date) {
-        this.created_date = created_date;
-    }
-
-    @Override
-    public String toString() {
-        return "Task [id=" + id + ", task_descrption=" + task_descrption + ", task_project=" + task_project + ", task_task=" + task_task + ", due_date=" + due_date + ", created_date="
-                + created_date +"]";
-    }
+//    @Override
+//    public String toString() {
+//        return "Task [id=" + id + ", task_descrption=" + task_descrption + ", task_project=" + task_project + ", task_task=" + task_task + ", due_date=" + due_date + ", created_date="
+//                + created_date +"]";
+//    }
 
     @Override
     public int hashCode() {
